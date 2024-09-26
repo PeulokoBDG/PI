@@ -1,0 +1,143 @@
+.img-capa {
+  border: 2px;
+  height: 50px;
+  width: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #b5b5b5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  background-color: #cbb3b3;
+
+}
+
+.card-title {
+  text-align: center;
+}
+
+.containe {
+  background-color: black;
+  margin: auto;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  /* Ocupa toda a largura da página */
+}
+
+.carousel-inner img {
+  width: 100%;
+  /* As imagens agora ocupam toda a largura */
+  height: 400px;
+  /* Altura das imagens ajustada */
+  object-fit: cover;
+  /* Ajusta o conteúdo da imagem para preencher a área sem distorções */
+}
+
+.btn-outline-success {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+h2 {
+  text-align: auto;
+}
+
+.card {
+  width: 300px;
+  /* Definindo a largura do card */
+  border: 1px solid #ec0e0e;
+  /* Adiciona uma borda leve ao card */
+  overflow: hidden;
+  /* Garante que o conteúdo dentro do card não ultrapasse */
+}
+
+.custom-img {
+  width: 100%;
+  /* Faz a imagem ocupar a largura completa do card */
+  height: 200px;
+  /* Define uma altura fixa para todas as imagens */
+  object-fit: fill;
+  /* Faz com que a imagem se ajuste sem distorcer */
+  border-bottom: 1px solid #ff0000;
+  /* Adiciona uma borda inferior à imagem */
+}
+
+.card-group {
+  background-color: #b5b5b5;
+}
+
+
+
+a img{
+  border:  2px;
+  height: 50px;
+  width: 50px;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.logo {
+  width: 80px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;  /* Mantém a proporção da imagem */
+}
+.container-fluid{
+  background-color: #cbb3b3;
+}
+
+
+
+body {
+  background-color: #f0f0f0; /* Cor de fundo */
+}
+.logo {
+  width: 50px;
+  height: auto;
+}
+.navbar {
+  background-color: #cbb3b3 !important; /* Cor da navbar */
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.imgmoodal{
+  background-color: blue;
+  align-content: center;
+  height: 300px;
+  width: 470px;
+  position: relative;
+}
