@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GIT FOOD</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          src="img/logo do site 2.jpg"
+          alt="Minha Logo"
+          class="img-capa logo"
+        />
+
+        <a class="navbar-brand">Git Food</a>
+        <a href="comida-caseira">Comida Caseira</a>
+        <a href="lanches">Lanches</a>
+        <a href="Doces">Doces</a>
+        <a href="Tortas e Bolos">Tortas e Bolos</a>
+        <a href="Massas">Massas</a>
+        <a href="Bebidas">Bebidas</a>
+
+        <!-- Botões de Login e Cadastrar -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+          >Login</a
+        >
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- FIM -->
+
+    <!-- Modal de Login -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <button
+              type="button"
+              class="btn btn-link"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Registrar-se
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM -->
+
+    <!-- Modal de Registro -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Registrar-se</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="registerNome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerNome"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label"
+                  >Confirmar Senha</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  placeholder="Confirme sua senha"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Voltar ao Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM -->
+
+    <!-- Container para centralizar o carrossel -->
+    <div class="carousel-container-top">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/teste1.png" class="d-block w-100" alt="Imagem 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/teste2.png" class="d-block w-100" alt="Imagem 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/teste3.png" class="d-block w-100" alt="Imagem 3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+    <!-- FIM -->
+
+    <!--COMEÇO DA ALA DE CARDS -->
+    <hr />
+    <h2>Receitas Mais Acessadas</h2>
+    <br />
+    <br />
+    <!-- FIM -->
+
+    <!-- CARD MAIS VISTOS -->
+    <div class="card-container" style="display: flex; gap: 20px">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/TESTE4.0PNG.webp"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">janela</h5>
+          <p class="card-text">
+            Um exemplo de texto rápido para construir o título do card e
+            preencher o conteúdo do card.
+          </p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/TESTE4.0PNG.webp"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">janela</h5>
+          <p class="card-text">
+            Um exemplo de texto rápido para construir o título do card e
+            preencher o conteúdo do card.
+          </p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/TESTE4.0PNG.webp"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">janela</h5>
+          <p class="card-text">
+            Um exemplo de texto rápido para construir o título do card e
+            preencher o conteúdo do card.
+          </p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="./img/TESTE4.0PNG.webp"
+          alt="Imagem de capa do card"
+        />
+        <div class="card-body">
+          <h5 class="card-title">janela</h5>
+          <p class="card-text">
+            Um exemplo de texto rápido para construir o título do card e
+            preencher o conteúdo do card.
+          </p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIM -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
